@@ -47,12 +47,18 @@ class App extends Component {
           <Formone
             placeholder="فرم اول....."
             btnText="دکمه تایید فرم اول"
-            btnClassName={formOneStyles.btn}
+            btnClassName={{
+              background: 'rgb(168, 126, 219)',
+              color: 'rgb(167, 231, 199)'
+            }}
           />
           <Formone
             placeholder="فرم دوم....."
             btnText="دکمه تایید فرم دوم"
-            btnClassName={formTwoStyles.btn}
+            btnStyle={{
+              color: 'rgb(179, 184, 181)',
+              background: 'rgb(181, 187, 101)'
+            }}
           />
           <Counter />
         </div>

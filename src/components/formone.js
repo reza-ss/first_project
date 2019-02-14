@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../form_one.module.css';
+import styles from './form_one.module.css';
 
 function Formone(props) {
   return (
@@ -12,7 +12,8 @@ function Formone(props) {
           <p>
             <input
               type="submit"
-              className={props.btnClassName}
+              className={styles.btn}
+              style={props.btnStyle}
               value={props.btnText}
             />
           </p>
