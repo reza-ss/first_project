@@ -7,9 +7,10 @@ import './index.css';
 import './rtl.css';
 import Third from './components/third';
 import Formone from './components/formone';
-import Formtwo from './components/formtwo';
 import Counter from './components/counter';
 import Footer from './components/footer';
+import formOneStyles from './components/form_one.module.css';
+import formTwoStyles from './components/form_two.module.css';
 
 class App extends Component {
   render() {
@@ -43,8 +44,16 @@ class App extends Component {
             ]}
             numbers={[23452, 4522, 54565, 4556, 112]}
           />
-          <Formone placeholder="فرم اول....." btnText="دکمه تایید فرم اول" />
-          <Formtwo placeholder="فرم دوم....." btnText="دکمه تایید فرم دوم" />
+          <Formone
+            placeholder="فرم اول....."
+            btnText="دکمه تایید فرم اول"
+            btnClassName={formOneStyles.btn}
+          />
+          <Formone
+            placeholder="فرم دوم....."
+            btnText="دکمه تایید فرم دوم"
+            btnClassName={formTwoStyles.btn}
+          />
           <Counter />
         </div>
         <Footer />

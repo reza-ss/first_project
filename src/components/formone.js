@@ -1,6 +1,6 @@
 import React from 'react';
 import style from '../form_one.module.css';
-console.log(style);
+
 function Formone(props) {
   return (
     <>
@@ -10,7 +10,11 @@ function Formone(props) {
             <input className="input" placeholder={props.placeholder} />
           </p>
           <p>
-            <input type="submit" className={style.btn} value={props.btnText} />
+            <input
+              type="submit"
+              className={props.btnClassName}
+              value={props.btnText}
+            />
           </p>
         </div>
       </section>
