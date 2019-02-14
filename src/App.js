@@ -9,8 +9,6 @@ import Third from './components/third';
 import Formone from './components/formone';
 import Counter from './components/counter';
 import Footer from './components/footer';
-import formOneStyles from './components/form_one.module.css';
-import formTwoStyles from './components/form_two.module.css';
 
 class App extends Component {
   render() {
@@ -47,9 +45,9 @@ class App extends Component {
           <Formone
             placeholder="فرم اول....."
             btnText="دکمه تایید فرم اول"
-            btnClassName={{
-              background: 'rgb(168, 126, 219)',
-              color: 'rgb(167, 231, 199)'
+            btnStyle={{
+              color: 'rgb(167, 231, 199)',
+              backgroundColor: 'rgb(168, 126, 219)'
             }}
           />
           <Formone
@@ -57,7 +55,7 @@ class App extends Component {
             btnText="دکمه تایید فرم دوم"
             btnStyle={{
               color: 'rgb(179, 184, 181)',
-              background: 'rgb(181, 187, 101)'
+              backgroundColor: 'rgb(181, 187, 101)'
             }}
           />
           <Counter />
