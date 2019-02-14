@@ -1,22 +1,28 @@
 import React from 'react';
-function Intro(props){
-    return(
+function Intro(props) {
+  return (
     <>
-<section id="intro" className="main">
-    <div className="spotlight">
-        <div className="content">
+      <section id="intro" className="main">
+        <div className="spotlight">
+          <div className="content">
             <header className="major">
-                <h2>{props.title}</h2>
+              <h2>{props.title}</h2>
             </header>
             <p>{props.children}</p>
             <ul className="actions">
-                <li><a href="generic.html" className="button">{props.btn}</a></li>
+              <li>
+                <a href="generic.html" className="button">
+                  {props.btn}
+                </a>
+              </li>
             </ul>
+          </div>
+          <span className="image">
+            <img src={require('../img/pic01.jpg')} />
+          </span>
         </div>
-        <span className="image"><img src={require('../img/pic01.jpg')}/></span>
-    </div>
-</section>
+      </section>
     </>
-    );
+  );
 }
 export default Intro;
